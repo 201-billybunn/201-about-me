@@ -1,0 +1,11 @@
+* {
+    font-family: sans-serif;
+}
+header {
+    background: lightblue;
+    color: blue;
+}
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
