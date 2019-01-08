@@ -18,79 +18,74 @@ var answers = [
 
 var correct = 'That is correct!\n';
 var incorrect = 'That is incorrect.\n';
+var score = 0;
 
-var responses = [];
+var responses = []; // Array to contain correct/incorrect + answers
 
+// Intro alert
+alert('Let\'s see how well you know me!\nPlease answer the following ' + questions.length + ' questions by typing "yes" or "no" in the prompt boxes.');
 
 // Question #1 - Was I born in Washington state? (No)
 var cali = prompt(questions[0]).toUpperCase();
 console.log('cali:', cali);
 
 if (cali === 'N' || cali === 'NO') {
-    alert(correct + answers[0]);
+    responses.push(correct + answers[0]);
+    score ++;
 } else {
-    alert(incorrect + answers[0]);
+    responses.push(incorrect + answers[0]);
 }
+console.log('current score:', score);
+alert(responses[0]);
 
 // Question #2 - Do I have a college degree? (Yes)
 var college = prompt(questions[1]).toUpperCase();
 console.log('college:', college);
 
 if (college === 'Y' || college === 'YES') {
-    alert(correct + answers [1]);
+    responses.push(correct + answers[1]);
+    score ++;
 } else {
-    alert(incorrect + answers[1]);
+    responses.push(incorrect + answers[1]);
 }
+console.log('current score:', score);
+alert(responses[1])
 
 // Question #3 - Am I older than Miley Cyrus? (No)
-var olderMiley = prompt('Am I older than Miley Cyrus?').toUpperCase();
+var olderMiley = prompt(questions[2]).toUpperCase();
 console.log('olderMiley:', olderMiley);
 
 if (olderMiley === 'N' || olderMiley === 'NO') {
-    alert(correct + answers [2]);
+    responses.push(correct + answers[2]);
+    score ++;
 } else {
-    alert(incorrect + answers[2]);
+    responses.push(incorrect + answers[2]);
 }
+console.log('current score:', score);
+alert(responses[2])
 
 // Question #4 - Am I older than Justin Bieber? (Yes)
-var olderBieber = prompt('Am I older than Justin Bieber?').toUpperCase();
+var olderBieber = prompt(questions[3]).toUpperCase();
 console.log('olderBieber:', olderBieber);
 
 if (olderBieber === 'Y' || olderBieber === 'YES') {
-    alert(correct + answers [3]);
+    responses.push(correct + answers[3]);
+    score ++;
 } else {
-    alert(incorrect + answers[3]);
+    responses.push(incorrect + answers[3]);
 }
+console.log('current score:', score);
+alert(responses[3])
 
 // Question #5 - Do I think intelligent extraterrestrial life exists? (Yes)
-var aliens = prompt('Do I believe that intelligent extraterrestrial life exists?').toUpperCase();
+var aliens = prompt(questions[4]).toUpperCase();
 console.log('aliens:', aliens);
 
 if (aliens === 'Y' || aliens === 'YES') {
-    alert(correct + answers [4]);
+    responses.push(correct + answers[4]);
+    score ++;
 } else {
-    alert(incorrect + answers[4]);
+    responses.push(incorrect + answers[4]);
 }
-
-
-
-
-
-// var kids = prompt('How many kids do you have?');
-// console.log('kids:', kids);
-
-
-
-
-// var guitars = prompt('How many guitars do you have?');
-// console.log('guitars:', guitars);
-
-// if (kids === '3' || kids === '4') {
-//     alert('You are correct! Too many kids');
-// }
-
-// if (parseInt(kids) === 3 && parseInt(guitars) === 3) {
-//     alert('yeah you are right');
-// } else {
-//     alert('you are wrong');
-// }
+console.log('current score:', score);
+alert(responses[4] + '\nYou got ' + score +' out of ' + questions.length + ' questions correct.');
