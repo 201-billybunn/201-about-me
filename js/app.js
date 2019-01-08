@@ -1,3 +1,5 @@
+'use strict';
+
 var kids = prompt('How many kids do you have?');
 console.log('kids:', kids);
 
