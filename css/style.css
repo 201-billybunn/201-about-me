@@ -1,11 +1,36 @@
 body {
     font-family: sans-serif;
+    font-size: 1em;
 }
 header {
     background: lightblue;
     color: blue;
-}
-h1 {
-    font-size: 25px;
+    text-align: center;
+    font-size: 200%;
     text-transform: uppercase;
+}
+#button-area {
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px 10% 10px 10%;
+    padding: 2px;
+
+}
+
+#questions {
+    margin: auto 10% auto 5%;
+}
+h2 {
+    font-weight: bold;
+    background-color: lightgray
+}
+li {
+    margin: 1% auto 1% auto;
+}
+
+.yes {
+    background-color: lightgreen;
+}
+.no {
+    background-color: lightcoral;
 }
