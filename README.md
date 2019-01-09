@@ -1,31 +1,24 @@
-## Synopsis
+## "About Me" Guessing Game
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This is my Lab 2 project at Code Fellows. It's a guessing game with 5 yes/no questions, built with some basic HTML, CSS, and JavaScript we've learned. 
 
-## Code Example
+## Project Requirements
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+* Design a guessing game using the prompt() method.
+* The questions in the guessing game must require a mix of yes/no answers, and user input must accept either y/n or yes/no responses, with either .toUpperCase() or .toLowerCase() used to validate the user input and accommodate users entering all-caps Y/N or YES/NO answers, too.
+* Use useful and descriptive console.log() messages in the JS console. 
+* Use some amount of CSS to style the page.
+* Follow the Add, Commit, Push process. It should be evident in GitHub that commits are made regularly, and with good commit messages that explain the WHY of the commit.
+* HTML, CSS, and JavaScript must be cleanly written with correct indentation and syntax.
 
-## Motivation
+## How to use
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+The guessing game begins by clicking the button at the top of the page. If the game is played, each question is displayed on the page.
 
-## Installation
+## Credits
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Built with the help of my Code Fellows instructors, TA's, classmates. 
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+[MIT](https://choosealicense.com/licenses/mit/)
