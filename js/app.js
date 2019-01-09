@@ -13,18 +13,19 @@ var answers = [
     'I have a B.A. from the University of Washington in Accounting.',
     'I\'m a few months younger than Miley Cyrus.',
     'I\'m about a year older than Justin Bieber.',
-    'I think aliens are out there, but I don\'t think we\'ll never meet them. Maybe we\'ll find their fossils!'
+    'I think aliens are out there, but I don\'t think we\'ll ever meet them. Maybe we\'ll find their fossils!'
 ]
 
 var correct = 'That is correct!\n';
 var incorrect = 'That is incorrect.\n';
 var score = 0;
 
-var responses = []; // Array to contain correct/incorrect + answers
+var responses = []; // Array to contain a string of 'correct/incorrect + answers'
 
-// Intro alert
 var play = confirm('Would you like to test your knowledge of Billy, future JavaScript extraordinaire?\nClick "OK" to play or "Cancel" to quit.');
 if (play === true) {
+    console.log('play:',play);
+    //Intro and instructions
     alert('Let\'s see how well you know me!\nPlease answer the following ' + questions.length + ' questions by typing "yes" or "no" in the prompt boxes.\n"y" or "n" are also accepted answers.');
 
     // Question #1 - Was I born in Washington state? (No)
@@ -90,7 +91,9 @@ if (play === true) {
         responses.push(incorrect + answers[4]);
     }
     console.log('current score:', score);
-    alert(responses[4] + '\nYou got ' + score +' out of ' + questions.length + ' questions correct.');
+    alert(responses[4]);
+    alert('You got ' + score +' out of ' + questions.length + ' questions correct.\nThanks for playing!');
 } else {
+    console.log('play:',play);
     alert('No worries, maybe next time!');
 }
