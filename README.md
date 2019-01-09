@@ -10,6 +10,7 @@ This is my Lab 2 project at Code Fellows. It's a guessing game with 5 yes/no que
 * Use some amount of CSS to style the page.
 * Follow the Add, Commit, Push process. It should be evident in GitHub that commits are made regularly, and with good commit messages that explain the WHY of the commit.
 * HTML, CSS, and JavaScript must be cleanly written with correct indentation and syntax.
+* Avoid declaring your own functions
 
 ## How to use
 
@@ -17,7 +18,7 @@ The guessing game begins by clicking the button at the top of the page. If the g
 
 ## Credits
 
-Built with the help of my Code Fellows instructors, TA's, classmates. 
+Built with the help of my Code Fellows instructors, TA's, and classmates. 
 
 ## License
 
