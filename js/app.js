@@ -6,8 +6,9 @@ var questions = [
     'Am I older than Miley Cyrus?',
     'Am I older than Justin Bieber?',
     'Do I believe that intelligent extraterrestrial life exists?',
-    'How old am I?'
-];
+    'How old am I?',
+    'I\'ve done a bit of traveling!\nCan you guess a country I\'ve visited?'
+]
 
 var answers = [
     'I was born and raised in Northern California.',
@@ -16,6 +17,7 @@ var answers = [
     'I\'m about a year older than Justin Bieber.',
     'I think aliens are out there, but I don\'t think we\'ll ever meet them. Maybe we\'ll find their fossils!',
     age
+    // See array below for question 7 answers. Note to move here in update
 ]
 
 var correct = 'That is correct!\n';
@@ -124,6 +126,47 @@ function runGame() { //Runs when button is clicked
         }
         console.log('current score:', score);
 
+        // Question 7: Can you name a country I've travelled to? (multiple answers)
+        var countries = [
+            'canada',
+            'italy',
+            'israel',
+            'jordan',
+            'england',
+            'scotland',
+            'haiti'
+        ]
+        var countriesStr = countries.join(', '); // joins countries into a string with commas and spaces
+
+        var countryGuesses = 6;
+        while (countryGuesses > 0) {
+            console.log('remaining guesses:',countryGuesses);
+            var guess = prompt(questions[6]).toLowerCase() || 'that';
+            for (var i = 0; i < countries.length; i++) {
+                if (guess === countries[i]) {
+                    console.log(guess, 'IS', countries[i]);
+                    guess = guess.charAt(0).toUpperCase() + guess.slice(1); //Capitalizes guessed country. Credit: https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
+                    alert(`${guess} IS a country I've been to!\nYou guessed it with ${countryGuesses - 1} tries left.\nHere's where I've been:\n${countriesStr}.`);
+                    score++;
+                    countryGuesses = 0;
+                    break;
+                } 
+            }
+
+            if (countryGuesses > 0) {
+                console.log(guess, 'IS NOT', countries[i]);
+                guess = guess.charAt(0).toUpperCase() + guess.slice(1); //Capitalizes guessed country
+                alert(`${guess} is NOT a country I\'ve been to. Try again!\nYou have ${countryGuesses - 1} guesses left for this question.`);    
+            }
+            countryGuesses--;
+
+            if (countryGuesses === 0) {
+                alert(`You're out of guesses!\nFor the record, here's where I've been:\n${countriesStr}.`)
+            }
+        
+            console.log('guesses left:', countryGuesses);
+        }
+
 
         alert('You got ' + score +' out of ' + questions.length + ' questions correct.\nThanks for playing!');
         
@@ -131,12 +174,11 @@ function runGame() { //Runs when button is clicked
         function showQuestions() {
             document.getElementById("questions").style.display = "block";
         }
-        showQuestions();
+       showQuestions();
 
     } else {
         console.log('play:',play);
         alert('No worries, maybe next time!');
     }
 
-    
 }
