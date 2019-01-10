@@ -32,17 +32,17 @@ button:hover {
 
 #questions-area {
     margin: auto 10% auto 5%;
-    display: none;
+    /* display: none; */
 }
 #questions {
-    display: none;
+    /* display: none; */
 }
-.yes {
+/* .yes {
     background-color: lightgreen;
 }
 .no {
     background-color: lightcoral;
-}
+} */
 
 
 li {

@@ -24,7 +24,7 @@ var age = 25; // My current age
 
 var responses = []; // Array to contain a string of 'correct/incorrect + answers'
 
-function runGame() { //Runs when button is clicked
+// function runGame() { //Runs when button is clicked
     var play = confirm('Would you like to test your knowledge of Billy, future JavaScript extraordinaire?\nClick "OK" to play or "Cancel" to quit.');
     if (play === true) {
 
@@ -175,10 +175,10 @@ function runGame() { //Runs when button is clicked
         alert(`You got ${score} out of ${questions.length} questions correct.\nThanks for playing, ${user}!`);
         
         //Shows questions after game is played 
-        function showQuestions() {
-            document.getElementById("questions").style.display = "block";
-            document.getElementById("questions-area").style.display = "block";
-        }
+        // function showQuestions() {
+        //     document.getElementById("questions").style.display = "block";
+        //     document.getElementById("questions-area").style.display = "block";
+        // }
        showQuestions();
 
     } else {
@@ -186,4 +186,4 @@ function runGame() { //Runs when button is clicked
         alert('No worries, maybe next time!');
     }
 
-}
+// }
