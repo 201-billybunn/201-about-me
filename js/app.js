@@ -20,10 +20,6 @@ var answers = [
     // See array below for question 7 answers. Note to move here in update
 ]
 
-var correct = 'That is correct!\n';
-var incorrect = 'That is incorrect.\n';
-var score = 0;
-
 var age = 25; // My current age
 
 var responses = []; // Array to contain a string of 'correct/incorrect + answers'
@@ -31,20 +27,28 @@ var responses = []; // Array to contain a string of 'correct/incorrect + answers
 function runGame() { //Runs when button is clicked
     var play = confirm('Would you like to test your knowledge of Billy, future JavaScript extraordinaire?\nClick "OK" to play or "Cancel" to quit.');
     if (play === true) {
+
         console.log('play:',play);
+
+
         // Intro and instructions
-        alert('Let\'s see how well you know me!\nPlease answer the following ' + questions.length + ' questions by typing "yes" or "no" in the prompt boxes.\n"y" or "n" are also accepted answers.');
+        var user = prompt('Great! First off, what\'s your name?') || 'stranger';
+        var correct = `That is correct! Well done, ${user}.\n`;
+        var incorrect = 'That is incorrect.\n';
+        var score = 0;
+        alert(`Ok, ${user}. Let's see how well you know me!\nPlease answer the following ${questions.length} questions by typing "yes" or "no" in the prompt boxes.\n"y" or "n" are also accepted answers.`);
 
         // Question #1 - Was I born in Washington state? (No)
         var cali = prompt(questions[0]).toUpperCase();
         console.log('cali:', cali);
-
+        
         if (cali === 'N' || cali === 'NO') {
             responses.push(correct + answers[0]);
             score ++;
         } else {
             responses.push(incorrect + answers[0]);
         }
+
         console.log('current score:', score);
         alert(responses[0]);
 
@@ -168,7 +172,7 @@ function runGame() { //Runs when button is clicked
         }
 
 
-        alert('You got ' + score +' out of ' + questions.length + ' questions correct.\nThanks for playing!');
+        alert(`You got ${score} out of ${questions.length} questions correct.\nThanks for playing, ${user}!`);
         
         //Shows questions after game is played 
         function showQuestions() {

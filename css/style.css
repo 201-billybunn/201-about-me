@@ -9,6 +9,12 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 }
+h2 {
+    font-weight: bold;
+    background-color: lightgray;
+    font-size: 150%;
+    text-align: center;
+}
 #button-area {
     text-align: center;
     border: 2px solid black;
@@ -16,11 +22,19 @@ header {
     padding: 5px;
 }
 button {
-    padding: 5px;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 120%;
+}
+button:hover {
+    background-color: lightgrey;
 }
 
 #questions-area {
     margin: auto 10% auto 5%;
+}
+#questions {
+    display: none;
 }
 .yes {
     background-color: lightgreen;
@@ -28,17 +42,30 @@ button {
 .no {
     background-color: lightcoral;
 }
-#questions {
-    display: none;
-}
-h2 {
-    font-weight: bold;
-    background-color: lightgray;
-    font-size: 150%;
-    text-align: center;
-}
+
+
 li {
     margin: 1% auto 1% auto;
+    padding: 50px: 
+
+
+}
+
+#top-ten {
+    margin: auto 10% auto 5%;
+}
+ul {
+
+}
+ul li {
+    display: block;
+    width: 50%;
+    background-color: lightsteelblue;
+    text-align: center;
+}
+ul li:hover {
+    background-color: mediumaquamarine;
+    color: white;
 }
 
 
