@@ -32,6 +32,7 @@ button:hover {
 
 #questions-area {
     margin: auto 10% auto 5%;
+    display: none;
 }
 #questions {
     display: none;

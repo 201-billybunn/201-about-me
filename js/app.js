@@ -41,7 +41,7 @@ function runGame() { //Runs when button is clicked
         // Question #1 - Was I born in Washington state? (No)
         var cali = prompt(questions[0]).toUpperCase();
         console.log('cali:', cali);
-        
+
         if (cali === 'N' || cali === 'NO') {
             responses.push(correct + answers[0]);
             score ++;
@@ -177,6 +177,7 @@ function runGame() { //Runs when button is clicked
         //Shows questions after game is played 
         function showQuestions() {
             document.getElementById("questions").style.display = "block";
+            document.getElementById("questions-area").style.display = "block";
         }
        showQuestions();
 
