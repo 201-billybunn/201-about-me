@@ -5,7 +5,8 @@ var questions = [
     'Do I have a college degree?',
     'Am I older than Miley Cyrus?',
     'Am I older than Justin Bieber?',
-    'Do I believe that intelligent extraterrestrial life exists?'
+    'Do I believe that intelligent extraterrestrial life exists?',
+    'How old am I?'
 ];
 
 var answers = [
@@ -13,12 +14,15 @@ var answers = [
     'I have a B.A. from the University of Washington in Accounting.',
     'I\'m a few months younger than Miley Cyrus.',
     'I\'m about a year older than Justin Bieber.',
-    'I think aliens are out there, but I don\'t think we\'ll ever meet them. Maybe we\'ll find their fossils!'
+    'I think aliens are out there, but I don\'t think we\'ll ever meet them. Maybe we\'ll find their fossils!',
+    age
 ]
 
 var correct = 'That is correct!\n';
 var incorrect = 'That is incorrect.\n';
 var score = 0;
+
+var age = 25; // My current age
 
 var responses = []; // Array to contain a string of 'correct/incorrect + answers'
 
@@ -26,7 +30,7 @@ function runGame() { //Runs when button is clicked
     var play = confirm('Would you like to test your knowledge of Billy, future JavaScript extraordinaire?\nClick "OK" to play or "Cancel" to quit.');
     if (play === true) {
         console.log('play:',play);
-        //Intro and instructions
+        // Intro and instructions
         alert('Let\'s see how well you know me!\nPlease answer the following ' + questions.length + ' questions by typing "yes" or "no" in the prompt boxes.\n"y" or "n" are also accepted answers.');
 
         // Question #1 - Was I born in Washington state? (No)
@@ -91,8 +95,36 @@ function runGame() { //Runs when button is clicked
         } else {
             responses.push(incorrect + answers[4]);
         }
-        console.log('current score:', score);
         alert(responses[4]);
+
+
+        // Question 6: How old am I? (with hints and 4 tries)        
+        var ageGuesses = 4;
+        while (ageGuesses > 0 && guess !== age) {
+            var guess = parseFloat(prompt(`${questions[5]}\nYou have ${ageGuesses} guess(es) left.`));
+            ageGuesses--;
+
+            if (guess === age) {
+                alert(`That\'s right!\nI\'m ${age} years old.\nYou did it with ${ageGuesses} guess(es) left.`);
+                score++;
+            } else if (guess > age) {
+                alert(`Too high!\nYou have ${ageGuesses} guess(es) left.`);
+            }
+            else if (guess < age) {
+                alert(`Too low!\nYou have ${ageGuesses} guess(es) left.`);
+            } else {
+                alert(`That input isn\'t accepted.\nEnter your guess as a number.\nYou have ${ageGuesses} guess(es) left.`);
+            }
+
+            if (ageGuesses === 0 && guess !== age) {
+                alert(`You didn't guess it, but I\'ll tell you anyway. I'm ${age} years old.`);
+            }
+
+            console.log('age guess:', guess, 'remaining ageGuesses:', ageGuesses);
+        }
+        console.log('current score:', score);
+
+
         alert('You got ' + score +' out of ' + questions.length + ' questions correct.\nThanks for playing!');
         
         //Shows questions after game is played 
