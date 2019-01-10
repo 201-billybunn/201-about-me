@@ -1,6 +1,6 @@
 ## "About Me" Guessing Game
 
-This is a guessing game with yes/no questions, built with some basic HTML, CSS, and JavaScript we've learned thusfar in week one of "Code 201" at Code Fellows in Seattle. 
+This is a guessing game with seven questions, built with some basic HTML, CSS, and JavaScript we've learned thusfar in week one of "Code 201" at Code Fellows in Seattle. 
 
 ## Motivation 
 
