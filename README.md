@@ -4,7 +4,7 @@ This is a guessing game with seven questions, built with some basic HTML, CSS, a
 
 ## Motivation 
 
-This is my week one project at Code Fellows' "Code 201" course. Each day, we had a "Lab" assignment which added requirements for us to build into our projects. 
+This is my week one project at Code Fellows' "Code 201" course. Each day, we had a "Lab" assignment which added requirements for us to build into our projects. Follow my journey into the world of coding [here on Twitter](https://twitter.com/billybunn).
 
 ## Project Requirements
 
