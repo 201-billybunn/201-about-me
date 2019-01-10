@@ -19,7 +19,9 @@ This is my week one project at Code Fellows' "Code 201" course. Each day, we had
 
 ### Lab 3
 
-* To be added
+* Add a sixth question to my guessing game that takes numeric input by prompting a user to guess a number, and indicates to the user whether the guess is "too high" or "too low", and gives the user exactly four opportunities to get the correct answer.
+* Add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array, so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
+* Keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name.
 
 ## How to use
 
@@ -28,6 +30,7 @@ The guessing game begins by clicking the button at the top of the page. If the g
 ## Credits
 
 Built with the help of my Code Fellows instructors, TA's, and classmates. 
+Special thanks to classmate Chris Morton and his help with the final question.
 
 ## License
 
