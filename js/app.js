@@ -192,16 +192,16 @@ var responses = []; // Array to contain a string of 'correct/incorrect + answers
     
     
             alert(`You got ${score} out of ${questions.length} questions correct.\nThanks for playing, ${user}!`);
-         
-
-
-
-
-
-
-
+        
         }
-           
+         questionOne();
+         questionTwo();
+         questionThree();
+         questionFour();
+         questionFive();
+         questionSix();
+         questionSeven();
+
         //Shows questions after game is played 
         // function showQuestions() {
         //     document.getElementById("questions").style.display = "block";
