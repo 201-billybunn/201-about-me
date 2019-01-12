@@ -23,14 +23,20 @@ This is my week one project at Code Fellows' "Code 201" course. Each day, we had
 * Add a seventh question to my guessing game that has multiple possible correct answers that are stored in an array, so that even more of my programming skills are showcased. For now, I will structure this question so that the user has six tries to get a single correct answer, and upon using up those tries OR getting a correct answer, displays a message to the user indicating all of the possible correct answers.
 * Keep a tally of the total number of correct answers given by the user, and at the end of the game, tell the user how well they did with a personalized custom message that includes the number of correct answers and also addresses the user by name.
 
+### Lab 4
+
+This iteration was done using a pair programming technique with one of my classmates at Code Fellows. For this lab, I acted as Navigator on this project and [Caroline Anne](https://github.com/carolineanneok) acted as Driver. \
+Caroline wrote some JavaScript to wrap the logic and variables for each of the questions into functions and call these functions in order.
+
 ## How to use
 
 The guessing game begins by clicking the button at the top of the page. If the game is played, each question is displayed on the page.
 
 ## Credits
 
-Built with the help of my Code Fellows instructors, TA's, and classmates. 
-Special thanks to classmate Chris Morton and his help with the final question.
+Built with the help of my Code Fellows instructors, TA's, and classmates. \
+*Lab 3:* Special thanks to classmate [Chris Morton](https://github.com/cmorto02) and his help with the final question.
+*Lab 5:* My classmate [Caroline Anne](https://github.com/carolineanneok). 
 
 ## License
 
