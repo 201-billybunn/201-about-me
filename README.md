@@ -35,7 +35,7 @@ The guessing game begins by clicking the button at the top of the page. If the g
 ## Credits
 
 Built with the help of my Code Fellows instructors, TA's, and classmates. \
-*Lab 3:* Special thanks to classmate [Chris Morton](https://github.com/cmorto02) and his help with the final question.
+*Lab 3:* Special thanks to classmate [Chris Morton](https://github.com/cmorto02) and his help with the final question. \
 *Lab 5:* My classmate [Caroline Anne](https://github.com/carolineanneok). 
 
 ## License
