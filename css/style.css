@@ -1,54 +1,107 @@
 body {
-
     color: rgba(255, 255, 255, 0.85);
-    font-family: 'Didact Gothic', sans-serif;
-
-    
-    background-color: black;
-
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    /* https://css-tricks.com/stripes-css/ */
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(#8e9eab, #343A3F);  Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(#8e9eab, #343A3F); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
 }
+#page {
+    max-width: 1000px;
+    background-color: #1A1D20;
+    margin: auto;
+}
+
+/* header image and title */
+header {
+   text-align: center;
+   
+}
+header img {
+    border-radius: 50%;
+}
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 120%;
+}
+
+/* "Play Game" button styling */
+#button-area {
+    text-align: center;
+}
+
+/* Questions section styling */
 #questions-area {
     background-color: red;
     padding: 10px;
 }
-
+#questions-area h2 {
+    text-align: center;
+    background-color: #98A6B2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto 5%;
+    margin-bottom: 5px;
+}
 ol {
-    background-color: orange;
+    background-color: white;
     padding: 5px;
-    border: 1px solid darkgoldenrod;
+    margin: auto 5%;
+    color: black;
+
+    list-style: none;
+    counter-reset: counter;
+
+    justify-content: center;
+}
+ol li {
+    background-color: ;
+    margin: 20px auto;
+    counter-increment: counter;
+}
+ol li::before {
+    content: counter(counter) ". ";
+    color: red;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 4px 4px 4px 8px;
+    margin-right: 5px;
 }
 
 
+
+/* Top 10 list styles */
 #top-ten {
     background-color: pink;
     padding: 10px;
-    float: left;
-    overflow:hidden;
-    position:relative;
-    width: 100%;
+}
+
+#top-ten h2 {
+    text-align: center;
+    background-color: #98A6B2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto 5%;
+    margin-bottom: -5px;
 }
 
 ul {
+    padding: 5px;
+    margin: auto 5%;
 
-    padding: 0;
-    margin 0;
-    float: left;
-    clear: left;
-    position: relative;
-    left: 50%;
-    text-align: center;
 }
-
 ul li {
     background-color: grey;
     border: 3px solid green;
-    margin: 10px;
+    border-radius: 20px;
+    margin: 5px 10px;
     padding: 10px 5px;
-    text-align: center;
-    /* box-sizing: border-box; */
+    /* text-align: center; */
     float: left;
-    position: relative;
-    right: 50%;
+
 }
 ul li:hover {
     background-color: yellow;
