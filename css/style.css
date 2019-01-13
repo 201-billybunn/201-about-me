@@ -32,32 +32,28 @@ button:hover {
 
 #questions-area {
     margin: auto 10% auto 5%;
-    /* display: none; */
+    display: none;
 }
 #questions {
-    /* display: none; */
+    display: none; */
 }
-/* .yes {
+
+/* "Yes" questions green, "No" questions red */
+.yes {
     background-color: lightgreen;
 }
 .no {
     background-color: lightcoral;
-} */
-
-
+}
 li {
     margin: 1% auto 1% auto;
     padding: 50px: 
-
-
 }
-
 #top-ten {
     margin: auto 10% auto 5%;
 }
-ul {
 
-}
+
 ul li {
     display: block;
     width: 50%;
@@ -68,5 +64,3 @@ ul li:hover {
     background-color: mediumaquamarine;
     color: white;
 }
-
-
