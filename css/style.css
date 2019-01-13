@@ -1,66 +1,55 @@
 body {
-    font-family: Helvetica, sans-serif;
-    font-size: 1em;
-}
-header {
-    background: lightgray;
-    text-align: center;
-    font-size: 200%;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-h2 {
-    font-weight: bold;
-    background-color: lightgray;
-    font-size: 150%;
-    text-align: center;
-}
-#button-area {
-    text-align: center;
-    border: 2px solid black;
-    margin: 10px 10% 10px 5%;
-    padding: 5px;
-}
-button {
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 120%;
-}
-button:hover {
-    background-color: lightgrey;
-}
 
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Didact Gothic', sans-serif;
+
+    
+    background-color: black;
+
+}
 #questions-area {
-    margin: auto 10% auto 5%;
-    display: none;
-}
-#questions {
-    display: none; */
+    background-color: red;
+    padding: 10px;
 }
 
-/* "Yes" questions green, "No" questions red */
-.yes {
-    background-color: lightgreen;
+ol {
+    background-color: orange;
+    padding: 5px;
+    border: 1px solid darkgoldenrod;
 }
-.no {
-    background-color: lightcoral;
-}
-li {
-    margin: 1% auto 1% auto;
-    padding: 50px: 
-}
+
+
 #top-ten {
-    margin: auto 10% auto 5%;
+    background-color: pink;
+    padding: 10px;
+    float: left;
+    overflow:hidden;
+    position:relative;
+    width: 100%;
 }
 
+ul {
+
+    padding: 0;
+    margin 0;
+    float: left;
+    clear: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+}
 
 ul li {
-    display: block;
-    width: 50%;
-    background-color: lightsteelblue;
+    background-color: grey;
+    border: 3px solid green;
+    margin: 10px;
+    padding: 10px 5px;
     text-align: center;
+    /* box-sizing: border-box; */
+    float: left;
+    position: relative;
+    right: 50%;
 }
 ul li:hover {
-    background-color: mediumaquamarine;
-    color: white;
+    background-color: yellow;
 }
