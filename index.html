@@ -2,57 +2,71 @@
 <html>
 
 <head>
-    <title>Billy Bunn Guessing Game</title>
+    <title>Billy Bunn</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style2.css"> -->
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 
 <body>
     <div id="page">
-        <header>
-            <img src="https://via.placeholder.com/200">
-            <h1>Billy Bunn</h1>
-        </header>
-        <main>
-            <section id="button-area">
-                <button onclick="runGame()">Play Guessing Game</button>
-            </section>
-            <section id="questions-area">
-                <h2>Questions</h2>
-                <ol id="questions">
-                    <li class="no">Was I born in Washington state?</li>
-                    <li class="yes">Do I have a college degree?</li>
-                    <li class="no">Am I older than Miley Cyrus?</li>
-                    <li class="yes">Am I older than Justin Bieber?</li>
-                    <li class="yes">Do I believe intelligent extraterrestrial life exists?</li>
-                </ol>
-            </section>
-            <section id="top-ten">
-                <h2>My Top 10 Seattle Coffee Spots</h2>
+        <div id="content">
+            <header>
+                <img src="img/profile-pic.jpeg">
+                <h1>Billy Bunn</h1>
+                <p>This is my week 1 project at <a href="https://www.codefellows.org">Code Fellows</a>.</br>Below,
+                    you'll find a button to play a guessing game I made with JavaScript. Note that it utilizes browser
+                    alerts, so you might need to allow pop-ups. Questions and their answers will populate after you
+                    play the game.</p>
+            </header>
+            <main>
+                <section id="button-area">
+                    <button onclick="runGame()">Play Guessing Game</button>
+                </section>
+                <section id="questions-area">
+                    <h2>Questions</h2>
+                    <ol id="questions">
+                        <li class="no">Was I born in Washington state?</li>
+                        <li class="yes">Do I have a college degree?</li>
+                        <li class="no">Am I older than Miley Cyrus?</li>
+                        <li class="yes">Am I older than Justin Bieber?</li>
+                        <li class="yes">Do I believe intelligent extraterrestrial life exists?</li>
+                        <li class="other">How old am I?<br />(25)</li>
+                        <li class="other">What countries have I visited?<br />(Canada, Italy, Israel, Jordan, England,
+                            Scotland, Haiti)</li>
+                    </ol>
+                </section>
+                <section id="top-ten-area">
+                    <h2>My Favorite Seattle Coffee Destinations</h2>
+                    <p>If I'm not studying at Code Fellows, you might find me at one of these spots.</p>
+                    <ul id="top-ten">
+                        <li><a href="http://milsteadandco.com/">Milstead & Co.</a></li>
+                        <li><a href="https://herkimercoffee.com/">Herkimer Coffee</a></li>
+                        <li><a href="https://lighthouseroasters.com/">Lighthouse Roasters</a></li>
+                        <li><a href="https://slatecoffee.com/">Slate Coffee Bar</a></li>
+                        <li><a href="http://analogcoffee.com/">Analog Coffee</a></li>
+                        <li><a href="http://www.lamarzoccousa.com/locations/">La Marzocco Cafe</a></li>
+                        <li><a href="http://www.seattlecoffeeworks.com/">Seattle Coffee Works</a></li>
+                        <li><a href="https://www.storyville.com/places/">Storyville Coffee</a></li>
+                        <li><a href="https://www.starbucksreserve.com/en-us/locations/seattle">Starbucks Reserve Roastery</a></li>
+                        <li><a href="http://www.caffevita.com/">Caffe Vita</a></li>
+                    </ul>
+                </section>
+            </main>
+            <footer>
                 <ul>
-                    <li>Milstead & Co.</li>
-                    <li>Herkimer Coffee</li>
-                    <li>Lighthouse Roasters</li>
-                    <li>Slate Coffee Bar</li>
-                    <li>Analog Coffee</li>
-                    <li>La Marzocco Cafe</li>
-                    <li>Ballard Coffee Works</li>
-                    <li>Storyville Coffee Co.</li>
-                    <li>Starbucks Reserve Roastery</li>
-                    <li>Caffe Vita</li>
+                    <li><a href="https://github.com/BillyBunn">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/billybunn/">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/billybunn/">Twitter</a></li>
                 </ul>
-            </section>
-        </main>
-        <footer>
-            <ul>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
-                <li>Twitter</li>
-            </ul>
-        </footer>
-        <script src="js/app.js"></script>
+            </footer>
+        </div>
+
+
     </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

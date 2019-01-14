@@ -161,8 +161,8 @@ function runGame() { //Runs when button is clicked
 
         // Shows questions after game is played 
         function showQuestions() {
-            document.getElementById("questions").style.display = "block";
-            document.getElementById("questions-area").style.display = "block";
+            document.getElementById("questions").style.display = "flex";
+            document.getElementById("questions-area").style.display = "flex";
         }
         showQuestions();
 
