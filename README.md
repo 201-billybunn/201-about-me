@@ -28,6 +28,10 @@ This is my week one project at Code Fellows' "Code 201" course. Each day, we had
 This iteration was done using a pair programming technique with one of my classmates at Code Fellows. For this lab, I acted as Navigator on this project and [Caroline Anne](https://github.com/carolineanneok) acted as Driver. \
 Caroline wrote some JavaScript to wrap the logic and variables for each of the questions into functions and call these functions in order.
 
+### Lab 5
+
+This iteration was mainly focused on CSS styling throughout. 
+
 ## How to use
 
 The guessing game begins by clicking the button at the top of the page. If the game is played, each question is displayed on the page.
